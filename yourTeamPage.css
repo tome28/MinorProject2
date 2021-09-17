@@ -1,0 +1,22 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.navbar{
+    background-color: rgb(104, 9, 9);
+}
+.progress{
+    width: 25%;
+    right: 10%;
+}
+.lowernav{
+    margin: 20px;
+    box-shadow: 10px 5px 5px rgb(58, 50, 50);
+}
+.table{
+    width: 85%;
+    
+}

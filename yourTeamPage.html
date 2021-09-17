@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Your Team Page</title>
+    <link rel="stylesheet" type="text/css" href="yourTeamPage.css">
+    <script type="text/javascript" src="yourTeamPage.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="webpage.html"><b>WINbaazi.COM</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-1">
+                    <li class="nav-item me-auto mb-2 mb-lg-0">
+                        <a class="nav-link active" aria-current="page" href="webpage.html">Home</a>
+                    </li>
+                    <li class="nav-item me-auto mb-2 mb-lg-0">
+                        <a class="nav-link active" href="#">Log-In</a>
+                    </li>
+                    <li class="nav-item me-auto mb-2 mb-lg-0">
+                        <a class="nav-link active" href="#">Contact-Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="p-4 p-md-5 mb-4 text-white bg-dark ">
+        <div class="col-md-12 px-5">
+            <center>
+                <h1 class="display-5 fst-italic">Delhi Capitals <img src="dc logo.png" style="height: 50px;"> Vs. <img
+                        src="csl logo.png" style="height: 50px;"> Chennai Super Kings</h1>
+                
+                <p class="playerNumber">Players Selected:0/11</p> 
+                <p class="creditNo">Players selected till now are :</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 0% "
+                        aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </center>
+        </div>
+    </div>
+    <div class="lowernav rounded">
+        <ul class="nav justify-content-center rounded text-white bg-dark ">
+            <li class="nav-link">
+                <a class="nav-link " href="#tableWk" style="color: rgb(190, 66, 66); font-weight:600;">WK</a>
+            </li>
+            <li class="nav-link">
+                <a class="nav-link" href="#tableBat" style="color: rgb(190, 66, 66); font-weight:600;">BAT</a>
+            </li>
+            <li class="nav-link">
+                <a class="nav-link" href="#tableAr" style="color:rgb(190, 66, 66) ; font-weight:600;">AR</a>
+            </li>
+            <li class="nav-link">
+                <a class="nav-link " href="#tableBowl" style="color: rgb(190, 66, 66); font-weight:600;">BOWL</a>
+            </li>
+        </ul>
+    </div>
+    <div class="playersTable ">
+        <center>
+            <table class="table table-success table-borderless" id="tableWk">
+                <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Player</th>
+                        
+                        <th scope="col">Credits</th>
+                        <th scope="col">Add</th>
+                        <th scope="col">Subtract</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>M.S. Dhoni</td>
+                        
+                        <td>8.5</td>
+                        <td><button id="click" name="M.S.Dhoni" onclick='clicked("M.S.Dhoni")'><img src="plus-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick='subClicked("M.S.Dhoni")'><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Rishabh Pant </td>
+                        
+                        <td>8.5</td>
+                        <td><button id="click" onclick='clicked("Rishabh Pant")'><img src="plus-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick='subClicked("Rishabh Pant")'><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </center>
+        <center>
+            <table class="table table-success table-borderless" id="tableBat">
+                <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Player</th>
+                        
+                        <th scope="col">Credits</th>
+                        <th scope="col">Add</th>
+                        <th scope="col">Subtract</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Faf du Plessis</td>
+                        <td>10</td>
+                        <td><button id="click" onclick='clicked("Faf du Plessis")'><img src="plus-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td> Ruturaj Gaikwad</td>
+                        
+                        <td>7</td>
+                        <td><button id="click" onclick='clicked("Ruturaj Gaikwad")'><img src="plus-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td >Ambati Rayudu</td>
+                        <td>8</td>
+                        <td><button id="click" onclick='clicked("Ambati Rayudu")'><img src="plus-circle.svg" id="select" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td >Prithvi Shaw</td>
+                        <td>9</td>
+                        <td><button id="click" onclick='clicked("Prithvi Shaw")'><img src="plus-circle.svg" id="select" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td >Shikhar Dhawan</td>
+                        <td>10.5</td>
+                        <td><button id="click" onclick='clicked("Shikhar Dhawan")'><img src="plus-circle.svg" id="select" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td >Ajinkya Rahane</td>
+                        <td>8</td>
+                        <td><button id="click" onclick='clicked("Ajinkya Rahane")'><img src="plus-circle.svg" id="select" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td >Shimron Hetmyer</td>
+                        <td>8</td>
+                        <td><button id="click" onclick='clicked("Shimron Hetmyer")'><img src="plus-circle.svg" id="select" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td >Steve Smith</td>
+                        <td>8.5</td>
+                        <td><button id="click" onclick='clicked("Steve Smith")'><img src="plus-circle.svg" id="select" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td >Chris Woakes</td>
+                        <td>8.5</td>
+                        <td><button id="click" onclick='clicked("Chris Woakes")'><img src="plus-circle.svg" id="select" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+        <center>
+            <table class="table table-success table-borderless" id="tableAr">
+                <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Player</th>
+                        
+                        <th scope="col">Credits</th>
+                        <th scope="col">Add</th>
+                        <th scope="col">Subtract</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Sam Curran</td>
+                        
+                        <td>9</td>
+                        <td><button id="click" onclick='clicked("Sam Curran")'><img src="plus-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Ravindra Jadeja</td>
+                        
+                        <td>9.5</td>
+                        <td><button id="click" onclick='clicked("Ravindra Jadeja")'><img src="plus-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td >Moeen Ali</td>
+                        <td>9.5</td>
+                        <td><button id="click" onclick='clicked("Moeen Ali")'><img src="plus-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td >Marcus Stoinis</td>
+                        <td>9</td>
+                        <td><button id="click" onclick='clicked("Marcus Stoinis")'><img src="plus-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+        <center>
+            <table class="table table-success table-borderless" id="tableBowl">
+                <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Player</th>
+                        
+                        <th scope="col">Credits</th>
+                        <th scope="col">Add</th>
+                        <th scope="col">Subtract</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Shardul Thakur</td>
+                        
+                        <td>8.5</td>
+                        <td><button id="click" onclick='clicked("Shardul Thakur")'><img src="plus-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Deepak Chahar</td>
+                        
+                        <td>8.5</td>
+                        <td><button id="click" onclick='clicked("Deepak Chahar")'><img src="plus-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td >Imran Tahir</td>
+                        <td>8</td>
+                        <td><button id="click" onclick='clicked("Imran Tahir")'><img src="plus-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td >R Ashwin</td>
+                        <td>8.5</td>
+                        <td><button id="click" onclick='clicked("R Ashwin")'><img src="plus-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td >Amit Mishra</td>
+                        <td>8.5</td>
+                        <td><button id="click" onclick='clicked("Amit Mishra")'><img src="plus-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row">6</th>
+                        <td >Ishant Sharma</td>
+                        <td>8</td>
+                        <td><button id="click" onclick='clicked("Ishant Sharma")'><img src="plus-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        <td><button id="click" onclick="subClicked()"><img src="dash-circle.svg" style="width: 25px; height: 25px;"></button></td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+    </div>
+
+
+
+
+</body>
+
+</html>

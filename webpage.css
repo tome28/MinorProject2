@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1 { font-family: 'Droid Sans', arial, serif; }
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header
+{
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a
+{
+    font-family: 'Pacifico', cursive ;
+
+}
+
+#navbar_logo
+{
+    background-color: #ff8177;
+    background-image: linear-gradient(to top , rgb(221, 206, 206) 0% , #e0de4b 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+header .logo
+{
+    position: relative;
+    max-width: 80px;
+    max-height: 4px;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+    list-style: none;
+    width: 180px
+}
+
+header ul li a 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none ;
+    padding: 10px 20px;
+    height: 100%;
+    width: 75%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to right ,#971766 , #71deff  );
+    background: linear-gradient(to right , #971766 , #71deff );
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox
+{ 
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2
+{
+    color:#ff0844;
+    font-size: 1.8cm;
+    line-height: 3cm;
+    font-weight: 700;
+    font-family: 'Stick', sans-serif;
+}
+.content .textBox h2 span
+{
+    color: #017143;
+    font-size: 1.2cm;
+    font-weight: 700;
+}
+.content .textBox p
+{
+    color: #fff;
+    font-family: 'Kavivanar', cursive;
+}
+.content .textBox a
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .imgBox
+{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.content .imgBox img
+{
+    max-width: 340px;
+}
+.thumb
+{
+    position: absolute;
+    left: 50%;
+    bottom: -170px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li
+{
+    list-style:none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover
+{
+    transform: translateY(-15px);
+}
+.thumb li img
+{
+    max-width: 60px;
+    width: 80px;
+    height: 80px;
+}
+.sci
+{
+    position: absolute;
+    top: 50%;
+    right: 630px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style: 2rem;
+}
+.sci .li 
+{
+    list-style:none;
+}
+.sci li a 
+{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1)
+}
+.circle
+{
+    
+        background-image: ('IPLLOGO.png');
+        background-repeat: no-repeat;
+        background-size: 50% 100%;
+    
+
+}
+.ipllogo
+{
+    position: absolute;
+    right: 900px;
+    top: 50%
+}
+.contact_us_section
+{
+    background-color: #131313 ;
+    padding: 10rem 0;
+
+}
+.contact_us_container
+{
+    background-color: #645f5ffd ;
+    position: absolute;
+    bottom: -250px;
+    left: 0px;
+    width: 100%;
+    height: 250px;
+
+}
+.contact_us_content
+{
+    color: #000;
+    width: 100%;
+    font-family: 'Kavivanar', cursive;
+    
+}
+.contact_us_content h2
+{
+    position: absolute;
+    font-size: 1.5rem;
+    background-size: 100%;
+    width: 20%;
+    right: 550px;
+    font-family: 'Kavivanar', cursive;
+
+}
+.contact_us_content ul
+{
+    position: absolute;
+    display: flex;
+}
+.contact_us_content ul li
+{
+    list-style: none;
+    width: 100%
+
+}
+.contact_us_content ul li a 
+{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    text-decoration: none ;
+    padding: 5px 5px;
+    height: 100%;
+    left: 500px;
+    right: 500px;
+    width: -300px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
